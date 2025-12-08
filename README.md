@@ -154,7 +154,8 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Accuracy over Epochs
 
-![Accuracy Curve](Result/Accuracy_Epoch.png)
+![Accuracy Curve](Result/Accuracy_Epoch.png){width=600px}
+
 
 - **최종 Train Accuracy**: 97.7%
 - **최종 Validation Accuracy**: 97.0%
@@ -165,7 +166,8 @@ class_weights_balanced['sink'] *= 1.5
 
 ### LogLoss over Epochs
 
-![Loss Curve](Result/LogLoss.png)
+![Loss Curve](Result/LogLoss.png){width=600px}
+
 
 - 초반 Loss 급감 후 안정화
 - Train/Validation Loss 패턴 일관
