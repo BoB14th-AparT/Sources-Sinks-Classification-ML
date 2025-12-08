@@ -154,7 +154,7 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Accuracy over Epochs
 
-<p align="center">
+<p align="left">
   <img src="Result/Accuracy_Epoch.png" alt="Accuracy Curve" width="600">
 </p>
 
@@ -162,14 +162,15 @@ class_weights_balanced['sink'] *= 1.5
 - **최종 Train Accuracy**: 97.7%
 - **최종 Validation Accuracy**: 97.0%
 - **수렴 시점**: ~100 epoch
-- **과적합 여부**: ❌ 없음 (Train/Val 곡선 유사)
+- **과적합 여부**: 없음 (Train/Val 곡선 유사)
 
 ---
 
 ### LogLoss over Epochs
 
-![Loss Curve](Result/LogLoss.png)
-
+<p align="left">
+  <img src="Result/LogLoss.png" alt="Accuracy Curve" width="600">
+</p>
 
 - 초반 Loss 급감 후 안정화
 - Train/Validation Loss 패턴 일관
@@ -181,7 +182,9 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Training Set (Last Epoch)
 
-![Train Confusion Matrix](Result/Train_Confusion.png)
+<p align="left">
+  <img src="Result/Train_Confusion.png" alt="Accuracy Curve" width="600">
+</p>
 
 | 실제 \ 예측 | neither | sink | source |
 |-------------|---------|------|--------|
@@ -198,7 +201,9 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Validation Set (Last Epoch)
 
-![Validation Confusion Matrix](Result/Validation_Confusion.png)
+<p align="left">
+  <img src="Result/Validation_Confusion.png" alt="Accuracy Curve" width="600">
+</p>
 
 | 실제 \ 예측 | neither | sink | source |
 |-------------|---------|------|--------|
@@ -215,7 +220,9 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Test Set (Final Evaluation)
 
-![Test Confusion Matrix](Result/Test_Confusion.png)
+<p align="left">
+  <img src="Result/Test_Confustion.png" alt="Accuracy Curve" width="600">
+</p>
 
 | 실제 \ 예측 | neither | sink | source |
 |-------------|---------|------|--------|
