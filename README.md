@@ -154,7 +154,7 @@ class_weights_balanced['sink'] *= 1.5
 
 ### Accuracy over Epochs
 
-![Accuracy Curve](Result/Accuracy_Epoch.png){width=600px}
+![Accuracy Curve](Result/Accuracy_Epoch.png){width=400px}
 
 
 - **최종 Train Accuracy**: 97.7%
