@@ -110,7 +110,7 @@ Sources-Sinks-Classification-ML/
 ### 2. 특징 추출 (TF-IDF)
 
 - **TF-IDF Vectorizer** 사용
-- **N-gram**: unigram + bigram 조합
+- **N-gram**: unigram (단일 토큰)
 - **Sparse Matrix** 기반 메모리 최적화
 - API 문자열의 의미론적 유사성 포착
 
@@ -134,6 +134,9 @@ SGDClassifier(
 | Learning Rate | 0.01 |
 | Alpha (L2 정규화) | 0.0001 |
 | Loss Function | log_loss (Cross-Entropy) |
+| N-gram Range | (1, 1) - unigram only |
+| Warm Start | True |
+| Random State | 42 |
 
 ### 5. 클래스 불균형 해결
 ```python
@@ -174,11 +177,9 @@ class_weights_balanced['sink'] *= 1.5
 
 - 초반 Loss 급감 후 안정화
 - Train/Validation Loss 패턴 일관
-- 확률 기반 예측 품질 우수
-
 ---
 
-## 🎯 Confusion Matrix 분석
+## Confusion Matrix 분석
 
 ### Training Set (Last Epoch)
 
@@ -261,7 +262,6 @@ class_weights_balanced['sink'] *= 1.5
 | **Source 정확도** | 95.3% | 93.8% | 94.6% |
 
 
-
 ---
 
 ## 참고 자료
@@ -269,5 +269,3 @@ class_weights_balanced['sink'] *= 1.5
 - [Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks](https://www.ndss-symposium.org/wp-content/uploads/2017/09/10_1_1.pdf)
 - [EviHunter: Identifying Digital Evidence in Android Applications](https://github.com/PASSIONLab/EviHunter)
 - [Scikit-learn Documentation](https://scikit-learn.org/)
-
----
